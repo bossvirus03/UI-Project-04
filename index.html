@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@200;400;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Project-04</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="103" height="38" viewBox="0 0 103 38" fill="none">
+                        <path d="M45 25.5005V7H49.176V21.8511H56.4585V25.5005H45Z" fill="#000958" />
+                        <path
+                            d="M63.3571 25.9314C61.7444 25.9314 60.5052 25.416 59.6395 24.3854C58.7737 23.3548 58.3408 21.7835 58.3408 19.6716V11.6125H62.415V19.8743C62.415 20.6177 62.6272 21.2091 63.0515 21.6484C63.4759 22.0876 64.0446 22.3073 64.7576 22.3073C65.4875 22.3073 66.0817 22.0792 66.54 21.623C66.9984 21.1668 67.2275 20.5502 67.2275 19.773V11.6125H71.3017V25.5005H68.0678V22.2566C67.4907 24.7064 65.9798 25.9314 63.5353 25.9314H63.3571Z"
+                            fill="#000958" />
+                        <path
+                            d="M81.3223 25.982C80.117 25.982 79.0646 25.7878 78.1649 25.3992C77.2821 24.9937 76.5437 24.453 75.9495 23.7772C75.3554 23.1014 74.914 22.3411 74.6254 21.4963C74.3369 20.6346 74.1926 19.7476 74.1926 18.8353V18.3537C74.1926 17.0866 74.4557 15.9039 74.9819 14.8057C75.5252 13.7075 76.323 12.8205 77.3755 12.1447C78.445 11.4688 79.7521 11.1309 81.2968 11.1309C82.553 11.1309 83.6649 11.3759 84.6326 11.8659C85.6002 12.339 86.3725 13.0063 86.9497 13.868C87.5269 14.7297 87.8494 15.7181 87.9173 16.8332H83.9196C83.8517 16.208 83.597 15.6843 83.1557 15.2619C82.7143 14.8226 82.0947 14.603 81.2968 14.603C80.2613 14.603 79.4974 14.9747 79.0051 15.7181C78.5129 16.4446 78.2667 17.4076 78.2667 18.6072C78.2667 19.7392 78.4959 20.6769 78.9542 21.4203C79.4295 22.1468 80.2189 22.51 81.3223 22.51C82.1371 22.51 82.7737 22.2988 83.2321 21.8765C83.6904 21.4541 83.962 20.8965 84.0469 20.2038H88.0192C87.9513 21.3527 87.6203 22.3664 87.0261 23.245C86.4489 24.1067 85.6596 24.7825 84.658 25.2724C83.6734 25.7455 82.5615 25.982 81.3223 25.982Z"
+                            fill="#000958" />
+                        <path
+                            d="M93.1711 25.1964L88.8933 11.6125H92.9929L96.074 22.0285H96.5832L99.1296 11.6125H103L99.1041 26.6156C98.8155 27.6969 98.4251 28.5586 97.9328 29.2006C97.4575 29.8427 96.8124 30.2988 95.9976 30.5692C95.1997 30.8564 94.1897 31 92.9674 31H90.472V27.5533H93.3748C94.0199 27.5533 94.5207 27.4266 94.8772 27.1732C95.2506 26.9197 95.5223 26.4636 95.692 25.8046L95.8193 25.1964H93.1711Z"
+                            fill="#000958" />
+                        <path
+                            d="M16.5062 25.9395C18.4079 25.9395 18.4079 27.8592 20.334 27.8592C23.2047 27.8592 23.4762 24.1622 21.5771 22.2769C19.6779 20.3917 19.6754 17.8779 16.5062 17.8779C13.3371 17.8779 13.3371 20.3917 11.4354 22.2769C9.53381 24.1622 9.80781 27.9328 12.6785 27.9328C14.6046 27.9328 14.6046 25.9395 16.5062 25.9395Z"
+                            fill="#000958" />
+                        <path
+                            d="M13.2029 15.9642C14.5773 15.7671 15.4717 14.0753 15.2006 12.1854C14.9296 10.2956 13.5957 8.92345 12.2213 9.12059C10.8468 9.31773 9.95241 11.0095 10.2235 12.8993C10.4945 14.7892 11.8285 16.1613 13.2029 15.9642Z"
+                            fill="#000958" />
+                        <path
+                            d="M22.7839 12.8858C23.055 10.996 22.1605 9.30423 20.7861 9.10709C19.4117 8.90996 18.0778 10.2821 17.8067 12.1719C17.5357 14.0618 18.4301 15.7536 19.8045 15.9507C21.1789 16.1478 22.5128 14.7757 22.7839 12.8858Z"
+                            fill="#000958" />
+                        <path
+                            d="M8.93682 20.2525C9.87392 19.7985 10.1429 18.4176 9.5376 17.1682C8.93231 15.9187 7.68195 15.2738 6.74486 15.7278C5.80776 16.1818 5.53878 17.5627 6.14408 18.8122C6.74937 20.0616 7.99973 20.7065 8.93682 20.2525Z"
+                            fill="#000958" />
+                        <path
+                            d="M26.8611 18.7967C27.4664 17.5472 27.1974 16.1663 26.2603 15.7123C25.3232 15.2584 24.0729 15.9032 23.4676 17.1527C22.8623 18.4022 23.1312 19.7831 24.0683 20.237C25.0054 20.691 26.2558 20.0461 26.8611 18.7967Z"
+                            fill="#000958" />
+                        <path
+                            d="M16.6587 0C26.7883 0 35 8.2117 35 18.3413C35 29.4827 25.4087 39.5433 12.6202 36.6827C10.2644 36.0096 6.56249 34.3269 4.54326 33.3173C2.52403 32.3077 2.86057 31.803 3.02884 31.6347C3.19711 31.4664 3.87018 31.1299 5.04807 31.6347C5.34307 31.7611 5.67367 31.91 6.03427 32.0724C7.11345 32.5583 8.46131 33.1652 9.92788 33.6539C10.9375 33.9904 12.6202 33.9904 13.4615 33.4856C13.9247 33.2077 14.6094 32.2776 14.1346 31.8029C13.7981 31.4663 12.7885 31.4663 11.1058 31.9712C9.42308 32.476 8.58173 31.6346 9.59135 30.9615C10.601 30.2885 12.2837 29.9519 14.4712 30.1202C15.217 30.1776 15.8259 30.2545 16.4313 30.331C17.6014 30.4788 18.7583 30.625 20.8654 30.625C27.6559 30.625 31.6346 24.6708 31.6346 18.3413C31.6346 10.0704 24.9296 3.36538 16.6587 3.36538C8.38766 3.36538 1.68269 10.0704 1.68269 18.3413C1.68269 23.1594 3.95792 27.446 7.49255 30.1855C2.95172 26.8817 0 21.5258 0 15.4806C0 6.35168 7.61916 0 16.6587 0Z"
+                            fill="url(#paint0_linear_11_1219)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_11_1219" x1="17.5" y1="0" x2="18.5" y2="47"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF592C" />
+                                <stop offset="1" stop-color="#FF592C" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#service">Service & Rates</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#review">Reviewa</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#footer">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__action">
+                    <a class="btn-signin" href="#!">Sign In</a>
+                    <a href="#!">
+                        <div class="btn btn--signup">Sign Up</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__media">
+                    <div class="hero__img--wrap">
+                        <img class="hero__img" src="./asset/img/hero-card-01.png" alt="" />
+                        <!-- Decorator -->
+                        <img src="./asset/img/decor01.svg" alt="" class="hero__decor hero__decor-left" />
+                        <img src="./asset/img/decor02.svg" alt="" class="hero__decor hero__decor-right" />
+                    </div>
+                    <div class="hero__img--wrap hero__img--wrap-small">
+                        <img src="/asset/img/hero-card-02.png" alt="" class="hero__img-small" />
+                    </div>
+                    <div class="hero__list">
+                        <!-- Hero list item 1 -->
+                        <section class="hero-list-item">
+                            <img src="./asset/img/pet-01.png" alt="" class="hero-list-item__thumb" />
+                            <div class="hero-list-item__info">
+                                <p class="hero-list-item__title">
+                                    Pet Health
+                                </p>
+                                <div class="hero-list-item__skeleton"></div>
+                                <div class="hero-list-item__skeleton" style="width: 39px"></div>
+                            </div>
+                        </section>
+
+                        <div class="hero-list-item__separate"></div>
+
+                        <!-- Hero list item 2 -->
+                        <section class="hero-list-item">
+                            <img src="./asset/img/pet-02.png" alt="" class="hero-list-item__thumb" />
+                            <div class="hero-list-item__info">
+                                <p class="hero-list-item__title">
+                                    Pet care
+                                </p>
+                                <div class="hero-list-item__skeleton"></div>
+                                <div class="hero-list-item__skeleton" style="width: 39px"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__heading">Established &
+                        Trusted Pet
+                        Care Service</h1>
+                    <p class="hero__desc">Discover a wide variety of Pawsitive services to choose from,
+                        including
+                        daycare, private walks, office duty and spa.</p>
+                    <div class="hero__contact">
+                        <a href="#!">
+                            <div class="btn btn-book">
+                                <p>Book a Meet</p>
+                                <img src="./asset/img/arowright.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link-call" href="#!">Schedule a Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__inner">
+                    <section class="about__content">
+                        <div class="about__tag">// About //</div>
+                        <h1 class="about__heading section__heading">Best Agency For
+                            Your Pet.</h1>
+                        <div class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="about__check-list">
+                            <span class="about__check-item">Certified Groomer</span>
+                            <span class="about__check-item">Animal Lover</span>
+                            <span class="about__check-item">14+ Years Experience</span>
+                            <span class="about__check-item">Pet Parent Of 3 Dogs</span>
+                        </div>
+                    </section>
+                    <div class="about__media">
+                        <div class="about__media-wrap-small">
+                            20+
+                            <p class="about__card-desc">Years Experience</p>
+                            <img src="./asset/img/foot-cat.svg" alt="" class="about__logo--foot-cat">
+
+                        </div>
+                        <div class="about__media-wrap">
+                            <img src="./asset/img/person&cat.png" alt="" class="about__media--person">
+                        </div>
+                    </div>
+                    <div class="about__media">
+                        <div class="about__media__second-wrap">
+                            <img src="./asset/img/dog-about.png" alt="">
+                        </div>
+                    </div>
+                    <section class="about__content">
+                        <h1 class="about__heading-second section__heading">Taking A Vacation?
+                            So Is Your Pet.</h1>
+                        <p class="about__desc about__desc-second">We offer long-term and short-term boarding. Every
+                            dog has its
+                            own
+                            private, spacious room and daily individual time in our large play yard.
+                        </p>
+                        <div class="about__home-list">
+                            <div class="about__home-item">
+                                <a href="">
+                                    <img src="./asset/img/icon-home01.svg" alt="" class="home-item--logo">
+                                    <p class="home-item--title">Pet Boarding</p>
+                                </a>
+                            </div>
+                            <div class="about__home-item active">
+                                <a href="">
+                                    <img src="./asset/img/icon-home02.svg" alt="" class="home-item--logo">
+                                    <p class="home-item--title">Pet Daycare</p>
+                                </a>
+                            </div>
+                            <div class="about__home-item">
+                                <a href="">
+                                    <img src="./asset/img/icon-home03.svg" alt="" class="home-item--logo">
+                                    <p class="home-item--title">Pet Transport</p>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="about__note">While you're on holiday, here's where your furry friends will spend their
+                            time.</p>
+                        <a href="" class="about__more-link">View more</a>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- Service -->
+        <section class="service" id="service">
+            <div class="container">
+                <div class="service__top">
+                    <div class="service__desc">What we do for you?</div>
+                    <h2 class="section__heading service__heading">Our Services</h2>
+                </div>
+                <div class="service__inner">
+                    <div class="service__body">
+                        <div class="service__column">
+                            <div class="service__item">
+                                <h3 class="service__item--heading">Puppy Sitting
+                                </h3>
+                                <div class="service__item--desc">Helping your new pup to be a good boy or girl isn’t
+                                    always easy, but we’re here to help.</div>
+                                <a href="#!" class="service__item--link">Read More <img
+                                        src="./asset/img/ArrowUpRight.svg" alt=""></a>
+                            </div>
+                            <div class="service__item">
+                                <h3 class="service__item--heading">Dog Walking
+                                </h3>
+                                <div class="service__item--desc">Choose from a 30, 45, or 60-minute visit to give your
+                                    pet their daily dose of fun-filled.</div>
+                                <a href="#!" class="service__item--link">Read More <img
+                                        src="./asset/img/ArrowUpRight.svg" alt=""></a>
+                            </div>
+                            <div class="service__item">
+                                <h3 class="service__item--heading">Pet Sitting
+                                </h3>
+                                <div class="service__item--desc">While you’re away we can make sure your pet has all the
+                                    food, water, exercise, and, of course.</div>
+                                <a href="#!" class="service__item--link">Read More <img
+                                        src="./asset/img/ArrowUpRight.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="service__column">
+                            <div class="service__item--media">
+                                <img src="./asset/img/service-main.png" alt="" class="service__item--media-img">
+                            </div>
+                            <a href="">
+                                <div class="btn btn-service">
+                                    View All Services
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service__column">
+                            <div class="service__item">
+                                <h3 class="service__item--heading">Overnight Care
+                                </h3>
+                                <div class="service__item--desc">If you’re away for the night, we can stay the night or
+                                    stop by in the evening and morning.</div>
+                                <a href="#!" class="service__item--link">Read More <img
+                                        src="./asset/img/ArrowUpRight.svg" alt=""></a>
+                            </div>
+                            <div class="service__item">
+                                <h3 class="service__item--heading">Pet Taxi
+                                </h3>
+                                <div class="service__item--desc">Does your pet need a lift to the groomers, vet, or dog
+                                    park? We’ve got their tail covered.</div>
+                                <a href="#!" class="service__item--link">Read More <img
+                                        src="./asset/img/ArrowUpRight.svg" alt=""></a>
+                            </div>
+                            <div class="service__item">
+                                <h3 class="service__item--heading">Pet Medical Admin
+                                </h3>
+                                <div class="service__item--desc">Our team of experienced professionals can help with
+                                    everything from pills to injections.</div>
+                                <a href="#!" class="service__item--link">Read More <img
+                                        src="./asset/img/ArrowUpRight.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Staff -->
+        <section class="staff">
+            <div class="container">
+                <div class="staff__inner">
+                    <div class="staff__top">
+                        <div class="staff__tag">Per Care Staff</div>
+                        <h2 class="staff__heading section__heading">Meet Our Groomers</h2>
+                    </div>
+                    <div class="staff__list">
+                        <div class="staff__item">
+                            <div class="staff__item--avatar-wrap">
+                                <img src="./asset/img/avtstaff01.png" alt="" class="staff__item--avatar">
+                            </div>
+                            <div class="staff__position">Pet Trainer</div>
+                            <h4 class="staff__Name">Meghan Samit</h4>
+
+                        </div>
+                        <div class="staff__item">
+                            <div class="staff__item--avatar-wrap">
+                                <img src="./asset/img/avtstaff02.png" alt="" class="staff__item--avatar">
+                            </div>
+                            <div class="staff__position">Pet Trainer</div>
+                            <h4 class="staff__Name">Alissa Silva</h4>
+
+                        </div>
+                        <div class="staff__item">
+                            <div class="staff__item--avatar-wrap">
+                                <img src="./asset/img/avtstaff03.png" alt="" class="staff__item--avatar">
+                            </div>
+                            <div class="staff__position">Pet Trainer</div>
+                            <h4 class="staff__Name">Cindy Harris</h4>
+
+                        </div>
+                        <div class="staff__item">
+                            <div class="staff__item--avatar-wrap">
+                                <img src="./asset/img/avtstaff04.png" alt="" class="staff__item--avatar">
+                            </div>
+                            <div class="staff__position">Pet Trainer</div>
+                            <h4 class="staff__Name">Lucas Tony</h4>
+
+                        </div>
+                    </div>
+                    <a href="#!">
+                        <div class="btn staff__btn">View All Team</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- pricing -->
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing__inner">
+                    <div class="pricing__top">
+                        <h2 class="section__heading pricing__heading">The Best Choice</h2>
+                        <p class="pricing__desc">We offer long-term and short-term boarding. Every dog has its own
+                            private, spacious room and daily individual time in our large play yard.</p>
+                    </div>
+                    <div class="pricing__switch-wrap">
+                        <div class="pricing__switch-wrap-inner">
+                            <div class="pricing__switch">
+                                <input type="checkbox" name="" id="pricing-switch" class="pricing__switch-input" hidden>
+                                <label for="pricing-switch" class="pricing__switch-label">
+                                    <span class="pricing__switch-value">Monthly</span>
+                                    <span class="pricing__switch-value">Yearly</span>
+                                </label>
+                            </div>
+                            <div class="pricing__sale-off">
+                                <img src="./asset/img/pricing-sale-off.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pricing__list">
+                        <div class="pricing__column">
+                            <p class="pricing__option">Basic</p>
+                            <span class="pricing__care">Day care</span>
+                            <h3 class="pricing__cost">$150</h3>
+                            <a href="#!">
+                                <div class="btn btn__pricing">Purchase Now</div>
+                            </a>
+                            <ul class="pricing__list--service">
+                                <li class="pricing__item-service checked">Single room</li>
+                                <li class="pricing__item-service checked">Socialist Exercise</li>
+                                <li class="pricing__item-service checked">Custom Meals</li>
+                                <li class="pricing__item-service checked">Spa and Grooming</li>
+                                <li class="pricing__item-service">Excercise 2x</li>
+                                <li class="pricing__item-service">Custom Meals</li>
+                                <li class="pricing__item-service">Grooming 2x</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__column">
+                            <p class="pricing__option">Exclusive</p>
+                            <span class="pricing__care">2X Care</span>
+                            <h3 class="pricing__cost">$199</h3>
+                            <a href="#!">
+                                <div class="btn btn__pricing">Purchase Now</div>
+                            </a>
+                            <ul class="pricing__list--service">
+                                <li class="pricing__item-service checked">Single room</li>
+                                <li class="pricing__item-service checked">Socialist Exercise</li>
+                                <li class="pricing__item-service checked">Custom Meals</li>
+                                <li class="pricing__item-service checked">Spa and Grooming</li>
+                                <li class="pricing__item-service checked">Excercise 2x</li>
+                                <li class="pricing__item-service">Custom Meals</li>
+                                <li class="pricing__item-service">Grooming 2x</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__column">
+                            <p class="pricing__option">Platinum</p>
+                            <span class="pricing__care">4X Care</span>
+                            <h3 class="pricing__cost">$299</h3>
+                            <a href="#!">
+                                <div class="btn btn__pricing">Purchase Now</div>
+                            </a>
+                            <ul class="pricing__list--service">
+                                <li class="pricing__item-service checked">Single room</li>
+                                <li class="pricing__item-service checked">Socialist Exercise</li>
+                                <li class="pricing__item-service checked">Custom Meals</li>
+                                <li class="pricing__item-service checked">Spa and Grooming</li>
+                                <li class="pricing__item-service checked">Excercise 2x</li>
+                                <li class="pricing__item-service checked">Custom Meals</li>
+                                <li class="pricing__item-service checked">Grooming 2x</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Review -->
+        <section class="review" id="review">
+            <div class="container">
+                <div class="review__inner">
+                    <div class="review__page review__page-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="review__inner-wrap">
+                        <div class="review__media">
+                            <img src="./asset/img/personreview.png" alt="" class="review__media-img">
+                        </div>
+                        <div class="review__content">
+                            <div class="section__heading review__heading">Our Reviews</div>
+                            <strong class="review__say">“It was very comforting to recieve a text and pics each day
+                                about
+                                our pets and how they were doing. It was also nice that my pets were in the comfortable
+                                environment of their own home and received playfull attention from our pet sitters as
+                                well.
+                                Thanks so much!”</strong>
+                            <div class="review__author">Karla Deras</div>
+                        </div>
+                    </div>
+                    <div class="review__page review__page-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="review__list-page-wrap">
+                    <ul class="review__list-page">
+                        <li class="review__item-page active"></li>
+                        <li class="review__item-page"></li>
+                        <li class="review__item-page"></li>
+                        <li class="review__item-page"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog__inner">
+                    <div class="blog__content">
+                        <h2 class="blog__heading section__heading">Our Blog</h2>
+                        <div class="blog__view-more">
+                            <div class="blog__desc">Stay up to date with the latest tech trands and news in the pets.
+                            </div>
+                            <a href="#!">
+                                <div class="btn btn__blog">View All Blog</div>
+                            </a>
+                        </div>
+                    </div>
+                    <section class="blog__list">
+                        <div class="blog__column">
+                            <div class="blog__media">
+                                <div class="blog__media--wrap">
+                                    <p class="blog__media--day">21 june 2021</p>
+                                    <img src="./asset/img/blog-1.png" class="blog__media--img"></img>
+                                </div>
+                            </div>
+                            <h4 class="blog__title">Building Bonds and Trusting Relationships with Your Pets.</h4>
+                            <p class="blog__desc">There isn’t a relationship around that can survive without trust. My
+                                relationship with my dog Peyton is deep...</p>
+                        </div>
+                        <div class="blog__column">
+                            <div class="blog__media">
+                                <div class="blog__media--wrap">
+                                    <p class="blog__media--day">28 june 2021</p>
+                                    <img src="./asset/img/blog-2.png" class="blog__media--img"></img>
+                                </div>
+                            </div>
+                            <h4 class="blog__title">Building Bonds and Trusting Relationships with Your Pets.</h4>
+                            <p class="blog__desc">There isn’t a relationship around that can survive without trust. My
+                                relationship with my dog Peyton is deep...</p>
+                        </div>
+                        <div class="blog__column">
+                            <div class="blog__media">
+                                <div class="blog__media--wrap">
+                                    <p class="blog__media--day">10 july 2021</p>
+                                    <img src="./asset/img/blog-3.png" class="blog__media--img"></img>
+                                </div>
+                            </div>
+                            <h4 class="blog__title">Building Bonds and Trusting Relationships with Your Pets.</h4>
+                            <p class="blog__desc">There isn’t a relationship around that can survive without trust. My
+                                relationship with my dog Peyton is deep...</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="103" height="38" viewBox="0 0 103 38"
+                            fill="none">
+                            <path d="M45 25.5005V7H49.176V21.8511H56.4585V25.5005H45Z" fill="#000958" />
+                            <path
+                                d="M63.3571 25.9314C61.7444 25.9314 60.5052 25.416 59.6395 24.3854C58.7737 23.3548 58.3408 21.7835 58.3408 19.6716V11.6125H62.415V19.8743C62.415 20.6177 62.6272 21.2091 63.0515 21.6484C63.4759 22.0876 64.0446 22.3073 64.7576 22.3073C65.4875 22.3073 66.0817 22.0792 66.54 21.623C66.9984 21.1668 67.2275 20.5502 67.2275 19.773V11.6125H71.3017V25.5005H68.0678V22.2566C67.4907 24.7064 65.9798 25.9314 63.5353 25.9314H63.3571Z"
+                                fill="#000958" />
+                            <path
+                                d="M81.3223 25.982C80.117 25.982 79.0646 25.7878 78.1649 25.3992C77.2821 24.9937 76.5437 24.453 75.9495 23.7772C75.3554 23.1014 74.914 22.3411 74.6254 21.4963C74.3369 20.6346 74.1926 19.7476 74.1926 18.8353V18.3537C74.1926 17.0866 74.4557 15.9039 74.9819 14.8057C75.5252 13.7075 76.323 12.8205 77.3755 12.1447C78.445 11.4688 79.7521 11.1309 81.2968 11.1309C82.553 11.1309 83.6649 11.3759 84.6326 11.8659C85.6002 12.339 86.3725 13.0063 86.9497 13.868C87.5269 14.7297 87.8494 15.7181 87.9173 16.8332H83.9196C83.8517 16.208 83.597 15.6843 83.1557 15.2619C82.7143 14.8226 82.0947 14.603 81.2968 14.603C80.2613 14.603 79.4974 14.9747 79.0051 15.7181C78.5129 16.4446 78.2667 17.4076 78.2667 18.6072C78.2667 19.7392 78.4959 20.6769 78.9542 21.4203C79.4295 22.1468 80.2189 22.51 81.3223 22.51C82.1371 22.51 82.7737 22.2988 83.2321 21.8765C83.6904 21.4541 83.962 20.8965 84.0469 20.2038H88.0192C87.9513 21.3527 87.6203 22.3664 87.0261 23.245C86.4489 24.1067 85.6596 24.7825 84.658 25.2724C83.6734 25.7455 82.5615 25.982 81.3223 25.982Z"
+                                fill="#000958" />
+                            <path
+                                d="M93.1711 25.1964L88.8933 11.6125H92.9929L96.074 22.0285H96.5832L99.1296 11.6125H103L99.1041 26.6156C98.8155 27.6969 98.4251 28.5586 97.9328 29.2006C97.4575 29.8427 96.8124 30.2988 95.9976 30.5692C95.1997 30.8564 94.1897 31 92.9674 31H90.472V27.5533H93.3748C94.0199 27.5533 94.5207 27.4266 94.8772 27.1732C95.2506 26.9197 95.5223 26.4636 95.692 25.8046L95.8193 25.1964H93.1711Z"
+                                fill="#000958" />
+                            <path
+                                d="M16.5062 25.9395C18.4079 25.9395 18.4079 27.8592 20.334 27.8592C23.2047 27.8592 23.4762 24.1622 21.5771 22.2769C19.6779 20.3917 19.6754 17.8779 16.5062 17.8779C13.3371 17.8779 13.3371 20.3917 11.4354 22.2769C9.53381 24.1622 9.80781 27.9328 12.6785 27.9328C14.6046 27.9328 14.6046 25.9395 16.5062 25.9395Z"
+                                fill="#000958" />
+                            <path
+                                d="M13.2029 15.9642C14.5773 15.7671 15.4717 14.0753 15.2006 12.1854C14.9296 10.2956 13.5957 8.92345 12.2213 9.12059C10.8468 9.31773 9.95241 11.0095 10.2235 12.8993C10.4945 14.7892 11.8285 16.1613 13.2029 15.9642Z"
+                                fill="#000958" />
+                            <path
+                                d="M22.7839 12.8858C23.055 10.996 22.1605 9.30423 20.7861 9.10709C19.4117 8.90996 18.0778 10.2821 17.8067 12.1719C17.5357 14.0618 18.4301 15.7536 19.8045 15.9507C21.1789 16.1478 22.5128 14.7757 22.7839 12.8858Z"
+                                fill="#000958" />
+                            <path
+                                d="M8.93682 20.2525C9.87392 19.7985 10.1429 18.4176 9.5376 17.1682C8.93231 15.9187 7.68195 15.2738 6.74486 15.7278C5.80776 16.1818 5.53878 17.5627 6.14408 18.8122C6.74937 20.0616 7.99973 20.7065 8.93682 20.2525Z"
+                                fill="#000958" />
+                            <path
+                                d="M26.8611 18.7967C27.4664 17.5472 27.1974 16.1663 26.2603 15.7123C25.3232 15.2584 24.0729 15.9032 23.4676 17.1527C22.8623 18.4022 23.1312 19.7831 24.0683 20.237C25.0054 20.691 26.2558 20.0461 26.8611 18.7967Z"
+                                fill="#000958" />
+                            <path
+                                d="M16.6587 0C26.7883 0 35 8.2117 35 18.3413C35 29.4827 25.4087 39.5433 12.6202 36.6827C10.2644 36.0096 6.56249 34.3269 4.54326 33.3173C2.52403 32.3077 2.86057 31.803 3.02884 31.6347C3.19711 31.4664 3.87018 31.1299 5.04807 31.6347C5.34307 31.7611 5.67367 31.91 6.03427 32.0724C7.11345 32.5583 8.46131 33.1652 9.92788 33.6539C10.9375 33.9904 12.6202 33.9904 13.4615 33.4856C13.9247 33.2077 14.6094 32.2776 14.1346 31.8029C13.7981 31.4663 12.7885 31.4663 11.1058 31.9712C9.42308 32.476 8.58173 31.6346 9.59135 30.9615C10.601 30.2885 12.2837 29.9519 14.4712 30.1202C15.217 30.1776 15.8259 30.2545 16.4313 30.331C17.6014 30.4788 18.7583 30.625 20.8654 30.625C27.6559 30.625 31.6346 24.6708 31.6346 18.3413C31.6346 10.0704 24.9296 3.36538 16.6587 3.36538C8.38766 3.36538 1.68269 10.0704 1.68269 18.3413C1.68269 23.1594 3.95792 27.446 7.49255 30.1855C2.95172 26.8817 0 21.5258 0 15.4806C0 6.35168 7.61916 0 16.6587 0Z"
+                                fill="url(#paint0_linear_11_1219)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_11_1219" x1="17.5" y1="0" x2="18.5" y2="47"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF592C" />
+                                    <stop offset="1" stop-color="#FF592C" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="footer__input-wrap">
+                        <input type="text" placeholder="Enter your email" class="footer__input">
+                        <div class="btn__submit-email"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                    <div class="footer__follow">
+                        Follow Us
+                        <div class="footer__follow-wrap">
+                            <a href="#!">
+                                <div class="footer__follow-fb"><img src="./asset/img/icon-tw.svg" alt=""></div>
+                            </a>
+                            <a href="#!">
+                                <div class="footer__follow-tt"><img src="./asset/img/icon-in.svg" alt=""></div>
+                            </a>
+                            <a href="#!">
+                                <div class="footer__follow-in"><img src="./asset/img/icon-fb.svg" alt=""></div>
+                            </a>
+                            <a href="!#">
+                                <div class="footer__follow-ig"><img src="./asset/img/icon-ig.svg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__right-wrap">
+                        <div class="footer__right-item">
+                            Explore
+                            <ul class="footer__right-item--links">
+                                <li class="footer__right-item--link">
+                                    <a href="">About Us</a>
+                                </li>
+                                <li class="footer__right-item--link">
+                                    <a href="">Services</a>
+                                </li>
+                                <li class="footer__right-item--link">
+                                    <a href="">Our Team</a>
+                                </li>
+                                <li class="footer__right-item--link">
+                                    <a href="">Adopt Pet</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right-item">
+                            Useful links
+                            <ul class="footer__right-item--links">
+                                <li class="footer__right-item--link">
+                                    <a href="">FAQs</a>
+                                </li>
+                                <li class="footer__right-item--link">
+                                    <a href="">Shop</a>
+                                </li>
+                                <li class="footer__right-item--link">
+                                    <a href="">Privacy Policy</a>
+                                </li>
+                                <li class="footer__right-item--link">
+                                    <a href="">Terms of Use</a>
+                                </li>
+                                <li class="footer__right-item--link">
+                                    <a href="">Site Map</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right-item">
+                            Contact Info
+                            <ul class="footer__right-item--links">
+                                <li class="footer__right-item--link">
+                                    abc@gmail.com
+                                </li>
+                                <li class="footer__right-item--link">
+                                    0 (800)-000-00-00
+                                </li>
+                                <li class="footer__right-item--link">
+                                    New York, NY, Rocawy 7
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right-item">
+                            Opening Time
+                            <ul class="footer__right-item--links">
+                                <li class="footer__right-item--link">
+                                    Mon – Fri : 08.00 am – 20.00 pm
+                                </li>
+                                <li class="footer__right-item--link">
+                                    Saturday : 09.00 am – 20.00 pm
+                                </li>
+                                <li class="footer__right-item--link">
+                                    Sunday: We are Closed
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right">Copyright & Design By Uihut, code by Loi</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
