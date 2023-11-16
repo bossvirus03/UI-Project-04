@@ -1069,7 +1069,8 @@ input,textarea,select,button{
 .footer__right-item--links{
     margin-top: 14px;
 }
-.footer__right-item--link{
+.footer__right-item--link,
+.footer__right-item--link a{
     margin-top: 14px;
     color: #656689;
     font-size: 14px;
